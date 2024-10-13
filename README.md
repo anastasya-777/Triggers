@@ -119,26 +119,3 @@
 <img width="836" alt="image" src="https://github.com/user-attachments/assets/996674bc-7aab-47de-9362-c5c0f0583812">
 
 
-2.3 Удалим преподавателя, например, Александра Иванова, и проверим, что в таблице TeacherManipulations появится запись с ActionId = 2.
-
-### Скрипт для удаления
-
-* DELETE FROM TeacherManipulations WHERE TeacherId = (SELECT Id FROM Teachers WHERE Name = 'Александр');
-* DELETE FROM Teachers WHERE Name = 'Александр';
-
-### Скрипт для проверки
-
-* SELECT * FROM TeacherManipulations WHERE TeacherId = 3;
-
-### Скриншот результата
-
-<img width="727" alt="image" src="https://github.com/user-attachments/assets/402a272d-bf8e-4f71-9cd9-988d15a67b42">
-
-
-
-  
-
-
-
-
-
